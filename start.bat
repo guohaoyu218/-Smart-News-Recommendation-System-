@@ -111,13 +111,13 @@ if "%choice%"=="7" (
     echo.
     
     echo ��������ļ�...
-    if exist "MIND\MINDsmall_train\news.tsv" (
+    if exist "data\MIND\MINDsmall_train\news.tsv" (
         echo �� ���������ļ�����
     ) else (
         echo �� ���������ļ�������
     )
     
-    if exist "MIND\MINDsmall_train\behaviors.tsv" (
+    if exist "data\MIND\MINDsmall_train\behaviors.tsv" (
         echo �� �û���Ϊ�����ļ�����
     ) else (
         echo �� �û���Ϊ�����ļ�������
