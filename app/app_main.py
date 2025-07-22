@@ -6,6 +6,9 @@ import streamlit as st
 import sys
 import os
 
+# 添加core目录到路径
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'core'))
+
 # 设置页面配置
 st.set_page_config(
     page_title="🌟 智能新闻推荐系统",

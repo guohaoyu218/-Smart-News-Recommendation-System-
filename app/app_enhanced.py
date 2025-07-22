@@ -1,4 +1,7 @@
 import streamlit as st
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'core'))
 from main import NewsRecommendationApp
 import base64
 import matplotlib.pyplot as plt

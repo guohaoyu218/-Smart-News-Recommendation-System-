@@ -5,6 +5,9 @@ from datetime import datetime, timedelta
 import json
 import random
 import time
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'core'))
 from main import NewsRecommendationApp
 
 def main():

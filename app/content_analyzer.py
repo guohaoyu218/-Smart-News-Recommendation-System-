@@ -10,6 +10,9 @@ import numpy as np
 import jieba
 import jieba.analyse
 from collections import Counter
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'core'))
 from main import NewsRecommendationApp
 import matplotlib.pyplot as plt
 import re

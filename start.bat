@@ -6,26 +6,26 @@ echo   News Recommendation System V2.0
 echo ========================================
 echo.
 
-echo [1] °²×°ÒÀÀµ°ü
-echo [2] Æô¶¯Ö÷Ó¦ÓÃ£¨ÍÆ¼ö£©
-echo [3] Æô¶¯¾­µä°æ±¾
-echo [4] Æô¶¯Êý¾Ý·ÖÎöÒÇ±í°å
-echo [5] Æô¶¯ÄÚÈÝ·ÖÎö¹¤¾ß
-echo [6] ÔËÐÐºóÌ¨ÍÆ¼ö·þÎñ
-echo [7] ²é¿´ÏµÍ³×´Ì¬
-echo [8] ÍË³ö
+echo [1] ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+echo [2] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã£ï¿½ï¿½Æ¼ï¿½ï¿½ï¿½
+echo [3] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾
+echo [4] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½
+echo [5] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+echo [6] ï¿½ï¿½ï¿½Ðºï¿½Ì¨ï¿½Æ¼ï¿½ï¿½ï¿½ï¿½ï¿½
+echo [7] ï¿½é¿´ÏµÍ³×´Ì¬
+echo [8] ï¿½Ë³ï¿½
 echo.
 
-set /p choice="ÇëÑ¡ÔñÒªÖ´ÐÐµÄ²Ù×÷ (1-8): "
+set /p choice="ï¿½ï¿½Ñ¡ï¿½ï¿½ÒªÖ´ï¿½ÐµÄ²ï¿½ï¿½ï¿½ (1-8): "
 
 if "%choice%"=="1" (
     echo.
-    echo ÕýÔÚ°²×°ÒÀÀµ°ü...
+    echo ï¿½ï¿½ï¿½Ú°ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...
     pip install -r requirements.txt
     if %errorlevel%==0 (
-        echo ÒÀÀµ°ü°²×°³É¹¦£¡
+        echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½É¹ï¿½ï¿½ï¿½
     ) else (
-        echo ÒÀÀµ°ü°²×°Ê§°Ü£¬Çë¼ì²éÍøÂçÁ¬½ÓºÍPython»·¾³¡£
+        echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óºï¿½Pythonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     )
     pause
     goto menu
@@ -33,44 +33,44 @@ if "%choice%"=="1" (
 
 if "%choice%"=="2" (
     echo.
-    echo ÕýÔÚÆô¶¯ÖÇÄÜÐÂÎÅÍÆ¼öÏµÍ³Ö÷Ó¦ÓÃ...
-    echo ÇëÔÚä¯ÀÀÆ÷ÖÐ·ÃÎÊ: http://localhost:8501
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ÏµÍ³ï¿½ï¿½Ó¦ï¿½ï¿½...
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½: http://localhost:8501
     echo.
-    streamlit run app_main.py --server.port=8501
+    streamlit run app/app_main.py --server.port=8501
     goto end
 )
 
 if "%choice%"=="3" (
     echo.
-    echo ÕýÔÚÆô¶¯¾­µä°æ±¾...
-    echo ÇëÔÚä¯ÀÀÆ÷ÖÐ·ÃÎÊ: http://localhost:8502
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾...
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½: http://localhost:8502
     echo.
-    streamlit run app_streamlit.py --server.port=8502
+    streamlit run app/app_streamlit.py --server.port=8502
     goto end
 )
 
 if "%choice%"=="4" (
     echo.
-    echo ÕýÔÚÆô¶¯Êý¾Ý·ÖÎöÒÇ±í°å...
-    echo ÇëÔÚä¯ÀÀÆ÷ÖÐ·ÃÎÊ: http://localhost:8503
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½...
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½: http://localhost:8503
     echo.
-    streamlit run dashboard.py --server.port=8503
+    streamlit run app/dashboard.py --server.port=8503
     goto end
 )
 
 if "%choice%"=="5" (
     echo.
-    echo ÕýÔÚÆô¶¯ÄÚÈÝ·ÖÎö¹¤¾ß...
-    echo ÇëÔÚä¯ÀÀÆ÷ÖÐ·ÃÎÊ: http://localhost:8504
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½: http://localhost:8504
     echo.
-    streamlit run content_analyzer.py --server.port=8504
+    streamlit run app/content_analyzer.py --server.port=8504
     goto end
 )
 
 if "%choice%"=="6" (
     echo.
-    echo ÕýÔÚÆô¶¯ºóÌ¨ÍÆ¼ö·þÎñ...
-    python main.py
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½Æ¼ï¿½ï¿½ï¿½ï¿½ï¿½...
+    python core/main.py
     pause
     goto menu
 )
@@ -78,64 +78,64 @@ if "%choice%"=="6" (
 if "%choice%"=="7" (
     echo.
     echo ========================================
-    echo              ÏµÍ³×´Ì¬¼ì²é
+    echo              ÏµÍ³×´Ì¬ï¿½ï¿½ï¿½
     echo ========================================
     echo.
     
-    echo ¼ì²éPython»·¾³...
+    echo ï¿½ï¿½ï¿½Pythonï¿½ï¿½ï¿½ï¿½...
     python --version
     echo.
     
-    echo ¼ì²éÒÑ°²×°µÄ°ü...
+    echo ï¿½ï¿½ï¿½ï¿½Ñ°ï¿½×°ï¿½Ä°ï¿½...
     pip list | findstr "streamlit|pandas|numpy"
     echo.
     
-    echo ¼ì²éÏîÄ¿ÎÄ¼þ...
-    if exist "main.py" (
-        echo ¡Ì main.py ´æÔÚ
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ä¼ï¿½...
+    if exist "core/main.py" (
+        echo ï¿½ï¿½ main.py ï¿½ï¿½ï¿½ï¿½
     ) else (
-        echo ¡Á main.py ²»´æÔÚ
+        echo ï¿½ï¿½ main.py ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     )
     
-    if exist "app_main.py" (
-        echo ¡Ì app_main.py ´æÔÚ
+    if exist "app/app_main.py" (
+        echo ï¿½ï¿½ app_main.py ï¿½ï¿½ï¿½ï¿½
     ) else (
-        echo ¡Á app_main.py ²»´æÔÚ
+        echo ï¿½ï¿½ app_main.py ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     )
     
     if exist "requirements.txt" (
-        echo ¡Ì requirements.txt ´æÔÚ
+        echo ï¿½ï¿½ requirements.txt ï¿½ï¿½ï¿½ï¿½
     ) else (
-        echo ¡Á requirements.txt ²»´æÔÚ
+        echo ï¿½ï¿½ requirements.txt ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     )
     echo.
     
-    echo ¼ì²éÊý¾ÝÎÄ¼þ...
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½...
     if exist "MIND\MINDsmall_train\news.tsv" (
-        echo ¡Ì ÐÂÎÅÊý¾ÝÎÄ¼þ´æÔÚ
+        echo ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
     ) else (
-        echo ¡Á ÐÂÎÅÊý¾ÝÎÄ¼þ²»´æÔÚ
+        echo ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     )
     
     if exist "MIND\MINDsmall_train\behaviors.tsv" (
-        echo ¡Ì ÓÃ»§ÐÐÎªÊý¾ÝÎÄ¼þ´æÔÚ
+        echo ï¿½ï¿½ ï¿½Ã»ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
     ) else (
-        echo ¡Á ÓÃ»§ÐÐÎªÊý¾ÝÎÄ¼þ²»´æÔÚ
+        echo ï¿½ï¿½ ï¿½Ã»ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     )
     echo.
     
-    echo ÏµÍ³×´Ì¬¼ì²éÍê³É£¡
+    echo ÏµÍ³×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½
     pause
     goto menu
 )
 
 if "%choice%"=="8" (
     echo.
-    echo ¸ÐÐ»Ê¹ÓÃÖÇÄÜÐÂÎÅÍÆ¼öÏµÍ³£¡
+    echo ï¿½ï¿½Ð»Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ÏµÍ³ï¿½ï¿½
     goto end
 )
 
-echo ÎÞÐ§Ñ¡Ôñ£¬ÇëÖØÐÂÊäÈë¡£
+echo ï¿½ï¿½Ð§Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¡£
 pause
 
 :menu

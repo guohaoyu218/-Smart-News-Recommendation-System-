@@ -34,7 +34,7 @@ class NewsRecommendationApp:
         # 执行数据预处理和入库
         logger.info("开始数据预处理和向量入库...")
         success = self.processor.process_and_save(
-            file_path='MIND/MINDsmall_train/news.tsv',
+            file_path='data/MIND/MINDsmall_train/news.tsv',
             collection_name="news_vectors",
             batch_size=500
         )
