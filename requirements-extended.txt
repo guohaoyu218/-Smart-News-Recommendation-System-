@@ -1,0 +1,12 @@
+# 扩展功能依赖包（可选安装）
+# 如果要使用新增的高级功能，请安装这些包
+
+plotly>=5.17.0              # 交互式图表（仪表板功能需要）
+streamlit-option-menu>=0.3.6  # 导航菜单组件
+streamlit-aggrid>=0.3.4     # 表格组件
+wordcloud>=1.9.2            # 词云生成（内容分析需要）
+jieba>=0.42.1              # 中文分词（内容分析需要）
+seaborn>=0.12.0            # 统计图表美化
+
+# 安装命令：
+# pip install -r requirements-extended.txt
